@@ -1,0 +1,42 @@
+/* Allgemeine Stile */
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Stil für den Countdown-Text */
+.countdown-text {
+    font-size: 36px;
+    opacity: 0;
+    animation: fadeIn 1s ease 1s forwards;
+}
+
+/* Stil für den Countdown-Timer */
+#countdown-timer {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Stil für den Countdown-Zähler (Tage, Stunden, Minuten, Sekunden) */
+#countdown-timer span {
+    margin: 0 10px; /* Abstände zwischen den Countdown-Elementen anpassen */
+}
+
+/* CSS-Animation "fadeIn" */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
